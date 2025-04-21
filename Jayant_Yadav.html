@@ -3,88 +3,362 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Jayant Yadav Resume</title>
+  <title>Jayant Yadav Portfolio</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <div class="container">
-    <div class="left">
-      <div class="profile-container">
-        <img class="profile-image" src="https://i.ibb.co/Lz30dgK5/jayant.png" alt="Jayant Yadav">
-        <h2>Jayant Yadav</h2>
+
+<body class="custom-cursor">
+  <!-- Custom Cursor Elements -->
+  <div class="cursor"></div>
+  <div class="cursor-dot"></div>
+
+  <!-- Header & Navigation -->
+  <header>
+    <nav class="navbar">
+      <a href="#" class="logo">Jayant Yadav<span style="color: var(--secondary-color)"></span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <div class="main-container">
+    <!-- Left Profile Section -->
+    <div class="profile-section">
+      <div class="profile-container animated">
+        <div class="profile-image-container">
+            <img class="profile-image" src="https://i.ibb.co/Lz30dgK5/jayant.png" alt="Jayant Yadav">
+        </div>
+        <h2 class="profile-name">Jayant Yadav</h2>
+        <p class="profile-title">Student & Public Speaker</p>
+        
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/jayant-yadav-535189292/" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+          <a href="https://github.com/jayantxyadav/" class="social-icon"><i class="fab fa-github"></i></a>
+          <a href="https://www.instagram.com/jayant._.yadav" class="social-icon"><i class="fab fa-instagram"></i></a>
+        </div>
       </div>
 
-      <div class="section-title">Contact</div>
-      <div class="contact-item">
-        <i>📞</i>
+      <div class="section-title animated delay-1">Contact Info</div>
+      <div class="contact-item animated delay-1">
+        <i class="fas fa-phone"></i>
         <span>+91 7067887448</span>
       </div>
-      <div class="contact-item">
-        <i>✉️</i>
+      <div class="contact-item animated delay-1">
+        <i class="fas fa-envelope"></i>
         <span>jayant.yadav24@iimb.ac.in</span>
       </div>
-      <div class="contact-item">
-        <i>📍</i>
+      <div class="contact-item animated delay-1">
+        <i class="fas fa-map-marker-alt"></i>
         <span>Shujalpur 465227</span>
       </div>
 
-      <div class="section-title">Key Achievements</div>
-      <ul>
+      <div class="section-title animated delay-2">Key Achievements</div>
+      <ul class="animated delay-2">
         <li>Winner of multiple inter and intra-school debate competitions.</li>
         <li>Active participant in regional and national forums.</li>
         <li>Organized and moderated student debates to promote critical thinking.</li>
       </ul>
 
-      <div class="section-title">Hobbies & Interests</div>
-      <ul>
+      <div class="section-title animated delay-3">Hobbies & Interests</div>
+      <ul class="animated delay-3">
         <li>Debating and public speaking</li>
         <li>Reading and staying updated on current affairs</li>
+        <li>Photography and visual storytelling</li>
+        <li>Creative writing and content creation</li>
       </ul>
     </div>
 
-    <div class="right">
-      <h1>Jayant Yadav</h1>
-      <p class="info">
-        A motivated and results-driven individual with strong leadership skills, academic excellence, and a proven track record in debates and public speaking. Aspiring to leverage my experience, skills, and passion to effectively lead and represent my zone.
+    <!-- Right Content Section -->
+    <div class="content-section">
+      <h1 class="section-heading animated" id="about">About Me</h1>
+      <p class="about-text animated">
+        A motivated and results-driven individual with strong leadership skills, academic excellence, and a proven track record in debates and public speaking. Passionate about communication, critical thinking, and effective leadership. Aspiring to leverage my experience, skills, and passion to effectively lead and represent my zone.
       </p>
 
-      <section>
-        <h3>Education</h3>
-        <div class="education-item">
-          <p><span class="highlight">ISC Board Exam (Class XII):</span> Achieved 80% — 2023</p>
-          <p>Deepti Convent Higher Secondary School</p>
+      <div class="content-block animated" id="education">
+        <h3 class="block-title">Education</h3>
+        <div class="item-card">
+          <h4 class="item-title">ISC Board Exam (Class XII)</h4>
+          <div class="item-subtitle"><i class="fas fa-graduation-cap"></i> Deepti Convent Higher Secondary School</div>
+          <div class="item-subtitle"><i class="fas fa-calendar-alt"></i> 2023</div>
+          <p>Achieved 80% in the ISC Board examinations with particularly strong performance in humanities subjects.</p>
         </div>
-      </section>
+      </div>
 
-      <section>
-        <h3>Experience</h3>
-        <div class="experience-item">
-          <p><strong>Leadership Experience</strong> — <em>School President</em></p>
+      <div class="content-block animated" id="experience">
+        <h3 class="block-title">Experience</h3>
+        <div class="item-card">
+          <h4 class="item-title">School President</h4>
+          <div class="item-subtitle"><i class="fas fa-building"></i> Deepti Convent Higher Secondary School</div>
+          <div class="item-subtitle"><i class="fas fa-calendar-alt"></i> 2022 - 2023</div>
           <ul>
             <li>Led the student council to organize and execute events successfully.</li>
             <li>Represented student concerns and initiatives to the administration.</li>
             <li>Fostered a collaborative and inclusive school environment.</li>
+            <li>Coordinated with various department heads to ensure smooth functioning of school activities.</li>
           </ul>
         </div>
-      </section>
-
-      <section>
-        <h3>Skills</h3>
-        <div class="skill-container">
-          <div class="skill-tag">Leadership</div>
-          <div class="skill-tag">Team Management</div>
-          <div class="skill-tag">Public Speaking</div>
-          <div class="skill-tag">Debate</div>
-          <div class="skill-tag">Problem-Solving</div>
-          <div class="skill-tag">Event Organization</div>
+        
+        <div class="item-card">
+          <h4 class="item-title">Debate Club President</h4>
+          <div class="item-subtitle"><i class="fas fa-microphone"></i> School Debate Society</div>
+          <div class="item-subtitle"><i class="fas fa-calendar-alt"></i> 2021 - 2023</div>
+          <ul>
+            <li>Organized weekly debate sessions on contemporary social and political issues.</li>
+            <li>Mentored junior students in research techniques and public speaking.</li>
+            <li>Represented the school in regional debate competitions.</li>
+          </ul>
         </div>
-        <ul>
-          <li><strong>Leadership & Team Management:</strong> Proven ability to lead teams and organize events.</li>
-          <li><strong>Public Speaking:</strong> Exceptional communication and debate skills honed through competitions.</li>
-          <li><strong>Problem-Solving:</strong> Adept at identifying challenges and implementing effective solutions.</li>
-        </ul>
-      </section>
+      </div>
+
+      <div class="content-block animated" id="skills">
+        <h3 class="block-title">Skills</h3>
+        <div class="skill-container">
+          <div class="skill-tag"><i class="fas fa-users"></i> Leadership</div>
+          <div class="skill-tag"><i class="fas fa-tasks"></i> Team Management</div>
+          <div class="skill-tag"><i class="fas fa-microphone-alt"></i> Public Speaking</div>
+          <div class="skill-tag"><i class="fas fa-comments"></i> Debate</div>
+          <div class="skill-tag"><i class="fas fa-lightbulb"></i> Problem-Solving</div>
+          <div class="skill-tag"><i class="fas fa-calendar-check"></i> Event Organization</div>
+          <div class="skill-tag"><i class="fas fa-pen-fancy"></i> Creative Writing</div>
+          <div class="skill-tag"><i class="fas fa-chart-line"></i> Critical Analysis</div>
+        </div>
+        
+        <div class="item-card">
+          <h4 class="item-title">Leadership & Communication</h4>
+          <p>Developed strong leadership and communication skills through roles as School President and Debate Club leader. Experienced in motivating teams, resolving conflicts, and representing group interests effectively.</p>
+        </div>
+        
+        <div class="item-card">
+          <h4 class="item-title">Public Speaking & Presentation</h4>
+          <p>Exceptional public speaking abilities demonstrated through successful participation in debate competitions. Comfortable addressing large audiences and presenting complex ideas in accessible formats.</p>
+        </div>
+      </div>
+      
+      <!-- Portfolio Section -->
+      <div class="content-block animated" id="portfolio">
+        <h3 class="block-title">Portfolio</h3>
+        <p>Highlights from my academic and extracurricular achievements.</p>
+        
+        <div class="portfolio-grid">
+          <div class="portfolio-item">
+            <img src="https://media.gettyimages.com/id/142022505/photo/business-people-having-debate-on-stage.jpg?s=612x612&w=0&k=20&c=lnrAe5IWiJb1BYlaYNUL8K5rVaPgpkM6RM0YiP0hjuc=" alt="Debate Championship" class="portfolio-image">
+            <div class="portfolio-overlay">
+              <h4 class="portfolio-title">Regional Debate Finals</h4>
+              <p class="portfolio-category">Public Speaking</p>
+            </div>
+            <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+          </div>
+          
+          <div class="portfolio-item">
+            <img src="https://media.gettyimages.com/id/539724971/photo/public-speaking-contestants-on-stage-during-the-legacy-junior-public-speaking-award-2005-state.jpg?s=612x612&w=0&k=20&c=T9PGNiaOWm2jpZ86N-7dhpKGCBCisXN9T5nLn9bMc0U=" alt="Leadership Workshop" class="portfolio-image">
+            <div class="portfolio-overlay">
+              <h4 class="portfolio-title">Student Leadership Summit</h4>
+              <p class="portfolio-category">Leadership</p>
+            </div>
+            <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+          </div>
+          
+          <div class="portfolio-item">
+            <img src="https://media.gettyimages.com/id/155542114/photo/new-delhi-india-students-listening-to-speakers-during-the-15th-edition-of-the-inter-school.jpg?s=612x612&w=0&k=20&c=pnuTWJ8YWKzK31nmd1vAuKhB304Vvipr3-sVudn2OAU=" alt="School Event" class="portfolio-image">
+            <div class="portfolio-overlay">
+              <h4 class="portfolio-title">Annual School Festival</h4>
+              <p class="portfolio-category">Event Management</p>
+            </div>
+            <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+          </div>
+          
+          <div class="portfolio-item">
+            <img src="https://media.gettyimages.com/id/1154248532/photo/minnesota-state-high-school-debate-competition-held-at-stillwater-high-school-copius-notes-on.jpg?s=612x612&w=0&k=20&c=YrWI063CzYldfg0LaT8Wv_SxvlIZf5tELe-eX4jv1X0=" alt="Article" class="portfolio-image">
+            <div class="portfolio-overlay">
+              <h4 class="portfolio-title">Opinion Editorial</h4>
+              <p class="portfolio-category">Writing</p>
+            </div>
+            <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Testimonials Section -->
+      <div class="content-block animated">
+        <h3 class="block-title">Testimonials</h3>
+        
+        <div class="testimonial-slider">
+          <div class="testimonial-item">
+            <p class="testimonial-text">
+              Jayant has demonstrated exceptional leadership abilities during his tenure as School President. His ability to listen to student concerns and work with administration to implement positive changes has been remarkable.
+            </p>
+            <div class="testimonial-author">
+              <img src="https://media.gettyimages.com/id/517442280/photo/vice-president-george-bush-looks-on-as-his-democratic-opponent-geraldine-ferraro-shakes-hands.jpg?s=612x612&w=0&k=20&c=Yac5LuQgfOUMSX9fm0qjQg8sto-TQQnZD3X1mPw9ric=" alt="Principal" class="testimonial-avatar">
+              <div class="testimonial-info">
+                <div class="testimonial-name">Dr. Sharma</div>
+                <div class="testimonial-role">School Principal</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial-item">
+            <p class="testimonial-text">
+              As the coach of our debate team, I've seen Jayant grow into an articulate and persuasive speaker. His dedication to research and preparation sets him apart from his peers.
+            </p>
+            <div class="testimonial-author">
+              <img src="https://media.gettyimages.com/id/82136251/photo/boy-wearing-number-and-speaking-on-stage.jpg?s=612x612&w=0&k=20&c=Di91SOjJsarfNLEjH0oaJB2GiZBdBxLU-z2VxMLYENc=" alt="Debate Coach" class="testimonial-avatar">
+              <div class="testimonial-info">
+                <div class="testimonial-name">Ms. Kapoor</div>
+                <div class="testimonial-role">Debate Coach</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Contact Section -->
+      <div class="content-block animated" id="contact">
+        <h3 class="block-title">Get In Touch</h3>
+        
+        <div class="contact-form">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control" placeholder="Your Email" required>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Subject">
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn">Send Message <i class="fas fa-paper-plane"></i></button>
+        </div>
+      </div>
     </div>
   </div>
+  
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/jayant-yadav-535189292/" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="https://github.com/jayantxyadav/" class="social-icon"><i class="fab fa-github"></i></a>
+        <a href="https://www.instagram.com/jayant._.yadav" class="social-icon"><i class="fab fa-instagram"></i></a>
+      </div>
+      <div class="footer-links">
+        <a href="#about" class="footer-link">About</a>
+        <a href="#education" class="footer-link">Education</a>
+        <a href="#experience" class="footer-link">Experience</a>
+        <a href="#skills" class="footer-link">Skills</a>
+        <a href="#portfolio" class="footer-link">Portfolio</a>
+        <a href="#contact" class="footer-link">Contact</a>
+      </div>
+      <p class="copyright">© 2025 Jayant Yadav. All rights reserved.</p>
+    </div>
+  </footer>
+  
+  <!-- JavaScript for Interactive Elements -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Custom cursor
+      const cursor = document.querySelector('.cursor');
+      const cursorDot = document.querySelector('.cursor-dot');
+      
+      document.addEventListener('mousemove', function(e) {
+        cursor.style.left = e.clientX + 'px';
+        cursor.style.top = e.clientY + 'px';
+        
+        cursorDot.style.left = e.clientX + 'px';
+        cursorDot.style.top = e.clientY + 'px';
+      });
+      
+      // Header scroll effect
+      const header = document.querySelector('header');
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 50) {
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+      });
+      
+      // Mobile navigation toggle
+      const hamburger = document.querySelector('.hamburger');
+      const navLinks = document.querySelector('.nav-links');
+      
+      hamburger.addEventListener('click', function() {
+        hamburger.classList.toggle('active');
+        navLinks.classList.toggle('active');
+      });
+      
+      // Close menu when clicking on links (mobile)
+      const navItems = document.querySelectorAll('.nav-links a');
+      navItems.forEach(item => {
+        item.addEventListener('click', function() {
+          hamburger.classList.remove('active');
+          navLinks.classList.remove('active');
+        });
+      });
+      
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          e.preventDefault();
+          
+          const targetId = this.getAttribute('href');
+          if (targetId === '#') return;
+          
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            const headerHeight = document.querySelector('header').offsetHeight;
+            const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight - 20;
+            
+            window.scrollTo({
+              top: targetPosition,
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+      
+      // Animation on scroll
+      const animatedElements = document.querySelectorAll('.animated:not(.delay-1):not(.delay-2):not(.delay-3)');
+      
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+      
+      animatedElements.forEach(el => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(20px)';
+        el.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+        observer.observe(el);
+      });
+    });
+  </script>
 </body>
 </html>
